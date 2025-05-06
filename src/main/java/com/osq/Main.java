@@ -1,7 +1,10 @@
 package com.osq;
 
+import com.osq.storage.config.Config;
+
 public class Main {
     public static void main(String[] args) {
-        System.out.println("Hello world!");
+        Config config = new Config();
+        config.setUp();
     }
 }
