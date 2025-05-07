@@ -5,14 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c20578c0-b063-4a40-ba4b-0c8e9c6770d8" name="Changes" comment="config: basic structure">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/osq/storage/config/Config.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/osq/storage/services/LocalFileStorageServiceTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/sample-files/example1.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/osq/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/osq/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/osq/storage/controllers/File.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/osq/storage/controllers/FileController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/osq/storage/models/File.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/osq/storage/models/File.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/osq/storage/controllers/FileController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/osq/storage/controllers/FileController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/osq/storage/services/LocalFileStorageServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/osq/storage/controllers/FileControllerTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,6 +39,8 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "Application.Main.executor": "Run",
+    "JUnit.FileControllerTest.testUploadFile.executor": "Run",
+    "JUnit.FileControllerTest.testUploadNonExistingFile.executor": "Run",
     "JUnit.LocalFileStorageServiceTest.testUploadNonExistingFile.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
@@ -60,7 +58,39 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RunManager">
+  <component name="RunManager" selected="JUnit.FileControllerTest.testUploadFile">
+    <configuration name="FileControllerTest.testUploadFile" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="kasten" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.osq.storage.controllers.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.osq.storage.controllers" />
+      <option name="MAIN_CLASS_NAME" value="com.osq.storage.controllers.FileControllerTest" />
+      <option name="METHOD_NAME" value="testUploadFile" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="FileControllerTest.testUploadNonExistingFile" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="kasten" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.osq.storage.controllers.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.osq.storage.controllers" />
+      <option name="MAIN_CLASS_NAME" value="com.osq.storage.controllers.FileControllerTest" />
+      <option name="METHOD_NAME" value="testUploadNonExistingFile" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="LocalFileStorageServiceTest.testUploadNonExistingFile" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="kasten" />
       <extension name="coverage">
@@ -79,6 +109,8 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.FileControllerTest.testUploadFile" />
+        <item itemvalue="JUnit.FileControllerTest.testUploadNonExistingFile" />
         <item itemvalue="JUnit.LocalFileStorageServiceTest.testUploadNonExistingFile" />
       </list>
     </recent_temporary>
@@ -103,6 +135,7 @@
       <workItem from="1746416888547" duration="1077000" />
       <workItem from="1746488337153" duration="56000" />
       <workItem from="1746507469153" duration="2145000" />
+      <workItem from="1746596281315" duration="1141000" />
     </task>
     <task id="LOCAL-00001" summary="config: basic structure">
       <option name="closed" value="true" />

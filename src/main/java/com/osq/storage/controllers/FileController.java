@@ -5,6 +5,7 @@ import com.osq.storage.services.FileStorageService;
 
 import java.io.IOException;
 import java.nio.file.Files;
+import java.nio.file.NoSuchFileException;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 
@@ -20,7 +21,7 @@ public class FileController {
         // load file bytes
         Path path = Paths.get(filepath);
         if (!Files.exists(path)) {
-            throw new NoSuchFieldException("File doesn't exist");
+            throw new NoSuchFileException("File doesn't exist: " + path.toAbsolutePath());
         }
 
         byte[] fileContent = Files.readAllBytes(path);
