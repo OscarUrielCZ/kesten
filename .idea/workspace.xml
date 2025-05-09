@@ -4,11 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c20578c0-b063-4a40-ba4b-0c8e9c6770d8" name="Changes" comment="config: basic structure">
-      <change afterPath="$PROJECT_DIR$/src/test/resources/sample-files/example1.txt" afterDir="false" />
+    <list default="true" id="c20578c0-b063-4a40-ba4b-0c8e9c6770d8" name="Changes" comment="feature: upload to local storage">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/osq/storage/config/Config.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/osq/storage/config/Config.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/osq/storage/controllers/FileController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/osq/storage/controllers/FileController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/osq/storage/services/LocalFileStorageServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/osq/storage/controllers/FileControllerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/osq/storage/services/FileStorageService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/osq/storage/services/FileStorageService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/osq/storage/services/LocalFileStorageService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/osq/storage/services/LocalFileStorageService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/osq/storage/controllers/FileControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/osq/storage/controllers/FileControllerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/sample-files/example1.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/sample-files/example1.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -135,7 +138,8 @@
       <workItem from="1746416888547" duration="1077000" />
       <workItem from="1746488337153" duration="56000" />
       <workItem from="1746507469153" duration="2145000" />
-      <workItem from="1746596281315" duration="1141000" />
+      <workItem from="1746596281315" duration="1728000" />
+      <workItem from="1746767771670" duration="1932000" />
     </task>
     <task id="LOCAL-00001" summary="config: basic structure">
       <option name="closed" value="true" />
@@ -177,6 +181,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="config: basic structure" />
-    <option name="LAST_COMMIT_MESSAGE" value="config: basic structure" />
+    <MESSAGE value="feature: upload to local storage" />
+    <option name="LAST_COMMIT_MESSAGE" value="feature: upload to local storage" />
   </component>
 </project>

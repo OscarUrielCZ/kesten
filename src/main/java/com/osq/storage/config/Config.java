@@ -5,11 +5,12 @@ import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 
+// TODO: inject as singleton
 public class Config {
-    private final String LOCAL_PATH = "/home/oscar/kasten/storage/";
+    public final String STORAGE_URI = "/home/oscar/kasten/storage/";
 
     public void setUp() {
-        Path rootDirPath = Paths.get(LOCAL_PATH);
+        Path rootDirPath = Paths.get(STORAGE_URI);
         if (!Files.exists(rootDirPath)) {
             System.out.println("[INFO]: Creating root directtory");
             try {

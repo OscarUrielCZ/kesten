@@ -28,12 +28,18 @@ public class FileController {
 
         // create and upload file
         File f = File.builder()
-                .filepath(filepath)
+                .filepath(path.getFileName().toString())
                 .content(fileContent)
                 .build();
         this.storageService.uploadFile(f);
 
         // return response
         return f;
+    }
+
+    public boolean existsFile(String filepath) {
+        String filename = Paths.get(filepath).getFileName().toString();
+
+        return this.storageService.fileExists(filename);
     }
 }

@@ -1,5 +1,6 @@
 package com.osq.storage.controllers;
 
+import com.osq.storage.config.Config;
 import com.osq.storage.models.File;
 import com.osq.storage.services.LocalFileStorageService;
 import org.junit.jupiter.api.BeforeEach;
@@ -16,7 +17,7 @@ public class FileControllerTest {
 
     @BeforeEach
     public void setUp() {
-        fileController = new FileController(new LocalFileStorageService());
+        fileController = new FileController(new LocalFileStorageService(new Config()));
     }
 
     @Test
@@ -39,7 +40,7 @@ public class FileControllerTest {
         }
 
         assertNotNull(response);
-        // TODO: check if file exists
+        assertTrue(fileController.existsFile(path));
     }
 
     @Test
