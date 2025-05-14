@@ -8,6 +8,7 @@ import java.nio.file.Files;
 import java.nio.file.NoSuchFileException;
 import java.nio.file.Path;
 import java.nio.file.Paths;
+import java.util.Optional;
 
 public class FileController {
 
@@ -15,6 +16,14 @@ public class FileController {
 
     public FileController(FileStorageService storageService) {
         this.storageService = storageService;
+    }
+
+    public File downloadFile(String sourcePath, String targetPath) {
+        Optional<File> response = storageService.dowloadFile(sourcePath);
+
+        // return bad response if it's empty
+        return response.orElse(null);
+
     }
 
     public File uploadFile(String filepath) throws NoSuchFieldException, IOException {

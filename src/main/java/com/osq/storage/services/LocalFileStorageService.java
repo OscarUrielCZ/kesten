@@ -8,6 +8,7 @@ import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.util.List;
+import java.util.Optional;
 
 public class LocalFileStorageService implements FileStorageService {
 
@@ -24,7 +25,7 @@ public class LocalFileStorageService implements FileStorageService {
     }
 
     @Override
-    public File dowloadFile(String filepath) {
+    public Optional<File> dowloadFile(String filepath) {
         return null;
     }
 

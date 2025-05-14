@@ -30,7 +30,6 @@ public class FileControllerTest {
     @Test
     public void testUploadFile() {
         String path = "src/test/resources/sample-files/example1.txt";
-
         File response = null;
 
         try {
@@ -45,7 +44,16 @@ public class FileControllerTest {
 
     @Test
     public void testDownloadFile() {
-        fail("Not yet implemented");
+        String path = "src/test/resources/sample-files/example1.txt";
+        File response = null;
+
+        try {
+            response = fileController.uploadFile(path);
+        } catch (NoSuchFieldException | IOException e) {
+            fail(e.getMessage());
+        }
+
+        fileController.download
     }
 
     @Test
