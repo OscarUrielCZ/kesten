@@ -52,8 +52,6 @@ public class FileControllerTest {
         } catch (NoSuchFieldException | IOException e) {
             fail(e.getMessage());
         }
-
-        fileController.download
     }
 
     @Test

@@ -9,6 +9,7 @@ import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.util.List;
 import java.util.Optional;
+import java.util.stream.Stream;
 
 public class LocalFileStorageService implements FileStorageService {
 
@@ -35,22 +36,28 @@ public class LocalFileStorageService implements FileStorageService {
     }
 
     @Override
-    public void createDirectory(String dirpath) {
+    public void createDirectory(final String dirpath) throws IOException {
+        Path path = Paths.get(config.STORAGE_URI, dirpath);
+        if (!Files.exists(path)) {
+            Files.createDirectory(path);
+        }
 
     }
 
     @Override
-    public void deleteFile(String filepath) {
-
+    public void deleteFile(String filepath) throws IOException {
+        Path path = Paths.get(config.STORAGE_URI, filepath);
+        Files.deleteIfExists(path);
     }
 
     @Override
-    public void deleteDirectory(String dirpath) {
-
+    public void deleteDirectory(String dirpath) throws IOException {
+        this.deleteFile(dirpath);
     }
 
     @Override
-    public List<File> listFiles(String dirpath) {
-        return List.of();
+    public List<Path> listFiles(String dirpath) throws IOException {
+        Stream<Path> files = Files.list(Paths.get(config.STORAGE_URI, dirpath));
+        return files.toList();
     }
 }
